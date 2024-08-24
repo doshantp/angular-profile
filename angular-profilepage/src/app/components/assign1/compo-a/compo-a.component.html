@@ -1,0 +1,9 @@
+<div class="p-5">
+    <h1>Component A</h1>
+    <input type="text" [(ngModel)]="valueA" class="p-2 rounded-4">
+    <br>
+<button (click)="sendValueToB()" class="p-2 rounded-4 mt-3">Send to B</button>
+<p class="mt-3 fs-4">Value from B: {{ valueFromB }}</p>
+<app-compo-b [valueFromA]="sendData" (sendToA)="receiveValueFromB($event)"></app-compo-b>
+</div>
+

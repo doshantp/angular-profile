@@ -1,0 +1,8 @@
+<div class="p-4">
+<p class="fs-1">Game-Control</p>
+<p class="fs-4">Current Number : {{count}}</p>
+<button mat-fab (click)="startgame()" class="m-4">Start</button>
+<button mat-fab (click)="stopgame()">Stop</button>
+<app-even [eventCount]="count"></app-even>
+<app-odd [eventCount]="count"></app-odd>
+</div>
